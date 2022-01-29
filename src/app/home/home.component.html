@@ -1,0 +1,21 @@
+<app-slider></app-slider>
+<div class="content__main">
+  <div class="content__storyList">
+      <h2>TRUYỆN MỚI CẬP NHẬT <i class="fas fa-angle-right"></i></h2>
+      <div class="story--list">
+          <div class="list--item" *ngFor="let story of storiesList">
+              <img [src]="story.img" alt="">
+              <h3><a href="">{{story.name}}</a></h3>
+                <div class="item-chapter" *ngFor="let newChapter of story.newChapters">
+                  <a href="">Chapter {{newChapter.chapter}}</a>
+                  <span>{{newChapter.updateTime}}</span>
+                </div>
+          </div>
+      </div>
+  </div>
+  <div class="content__subnav">
+      <div class="read--history">
+          <h4>Lịch sử đọc truyện</h4>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.header__taskbar{
+  background-color: rgba($color: #000, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  ul{
+    display: flex;
+    width: 1031px;
+    padding: 0 18px;
+    li{
+      border-right: .5px solid #ccc;
+      padding: 12px 8px;
+      a{
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+      }
+    }
+  }
+  li:hover{
+    background-color: #ccc;
+  }
+}
+.check{
+  background-color: #fff;
+  color: violet;
+}

@@ -1,0 +1,18 @@
+<div class="content__story">
+  <h2>TRUYỆN ĐỀ CỬ <i class="fas fa-angle-right"></i></h2>
+  <div class="story--slider">
+      <div class="slide" *ngFor="let story of storySlide">
+          <img [src]="story.img" alt="">
+          <div class="slide--content">
+              <h4 [title]="story.name"><a href="">{{ story.name }}</a></h4>
+              <div class="slide--main">
+                  <a href="" [title]="story.newChapter">{{ story.newChapter }}</a>
+                  <span>{{ story.updateTime }}</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button class="btn prev"><i class="fas fa-angle-left"></i></button>
+  <button class="btn next"><i class="fas fa-angle-right"></i></button>
+</div>
+

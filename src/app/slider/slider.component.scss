@@ -1,0 +1,78 @@
+.content__story{
+  position: relative;
+  overflow: hidden;
+  h2{
+    margin: 16px 0;
+    color: rgb(94, 94, 240);
+    font-weight: normal;
+  }
+  .story--slider{
+    display: flex;
+    overflow: hidden;
+    width: 200%;
+    .slide{
+      width: 200px;
+      height: 219px;
+      overflow: hidden;
+      padding: 0 12px;
+      position: relative;
+      transition: 0.6s;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .slide--content{
+        color: #fff;
+        background-color: rgba($color: #000, $alpha: 0.8);
+        position: absolute;
+        width: 88%;
+        top: 80px;
+        transform: translateY(75px);
+        h4{
+          text-align: center;
+          padding-top: 8px;
+          overflow: hidden;
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: normal;
+        }
+        .slide--main{
+          display: flex;
+          justify-content: space-around;
+          font-size: 14px;
+          padding: 12px 6px;
+          span{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .btn{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    position: absolute;
+    top: 140px;
+    .fas{
+      font-size: 16px;
+      color: rgba($color: #ccc, $alpha: 0.3);
+    }
+  }
+  .prev{
+    left: 10px;
+  }
+  .next{
+    right: 10px;
+  }
+  .btn:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .btn:hover .fas{
+    color: rgba($color: #000, $alpha: 0.7);
+    font-size: 18px;
+  }
+}
